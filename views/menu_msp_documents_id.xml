@@ -1,0 +1,11 @@
+<odoo>
+    <record id="msp_documents_id_action" model="ir.actions.act_window">
+        <field name="name">MSP Documents</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="res_model">msp.documents.id</field>
+    </record>
+    
+    <!-- Tambahkan icon untuk menuitem -->
+    <menuitem id="menu_msp_documents" name="MSP Documents" sequence="116" action="msp_documents_id_action" web_icon="msp_document_id,static/description/icon.png"/>
+</odoo>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Aksi Window -->
+        <record id="action_msp_documents_id" model="ir.actions.act_window">
+            <field name="name">MSP Documents</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,form</field>
+            <field name="res_model">msp.documents.id</field>
+        </record>
+
+        <!-- Tampilan Pohon Editable -->
+        <record id="view_msp_documents_id_tree_editable" model="ir.ui.view">
+            <field name="name">msp.documents.id.tree.editable</field>
+            <field name="model">msp.documents.id</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="documents_id"/>
+                    <field name="revision_date"/>
+                    <field name="effective_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Tampilan Form -->
+        <record id="view_msp_documents_id_form" model="ir.ui.view">
+            <field name="name">msp.documents.id.form</field>
+            <field name="model">msp.documents.id</field>
+            <field name="arch" type="xml">
+                <form string="Documents ID Form">
+                    <header>
+                        <!-- Anda bisa menambahkan tombol atau elemen lain di sini jika diperlukan -->
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="revision_date"/>
+                            <field name="effective_date"/>
+                        </group>
+                        <group name="documents_id" string="Documents ID">
+                            <field name="documents_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
