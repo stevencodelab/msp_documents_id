@@ -6,7 +6,7 @@
     'data' : [
                 "security/ir.model.access.csv",
                 "views/menu_msp_documents_id.xml",
-                "views/msp_documents_id.xml",
+                "views/views_msp_documents_id.xml",
 
     ],
     'license' : 'LGPL-3',
